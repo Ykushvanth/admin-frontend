@@ -57,7 +57,7 @@ const AdminDashboard = () => {
     useEffect(() => {
         const fetchStats = async () => {
             try {
-                const response = await fetch('http://localhost:3003/api/admin/stats', {
+                const response = await fetch('https://admin-backend-2-0pa4.onrender.com/api/admin/stats', {
                     headers: {
                         Authorization: `Bearer ${Cookies.get('admin_jwt_token')}`,
                     },
@@ -75,7 +75,7 @@ const AdminDashboard = () => {
 
         const fetchBookings = async () => {
             try {
-                const response = await fetch('http://localhost:3003/api/admin/bookings', {
+                const response = await fetch('https://admin-backend-2-0pa4.onrender.com/api/admin/bookings', {
                     headers: {
                         Authorization: `Bearer ${Cookies.get('admin_jwt_token')}`,
                     },
@@ -94,7 +94,7 @@ const AdminDashboard = () => {
         const fetchParkingLot = async () => {
             try {
                 console.log('Fetching parking lot data...');
-                const response = await fetch('http://localhost:3003/api/admin/parking-lot', {
+                const response = await fetch('https://admin-backend-2-0pa4.onrender.com/api/admin/parking-lot', {
                     headers: {
                         Authorization: `Bearer ${Cookies.get('admin_jwt_token')}`,
                     },
@@ -115,7 +115,7 @@ const AdminDashboard = () => {
 
         const fetchUsers = async () => {
             try {
-                const response = await fetch('http://localhost:3003/api/admin/users', {
+                const response = await fetch('https://admin-backend-2-0pa4.onrender.com/api/admin/users', {
                     headers: {
                         Authorization: `Bearer ${Cookies.get('admin_jwt_token')}`,
                     },
@@ -146,7 +146,7 @@ const AdminDashboard = () => {
     // Add a refresh function to manually fetch the latest data
     const refreshParkingLotData = async () => {
         try {
-            const response = await fetch('http://localhost:3003/api/admin/parking-lot', {
+            const response = await fetch('https://admin-backend-2-0pa4.onrender.com/api/admin/parking-lot', {
                 headers: {
                     Authorization: `Bearer ${Cookies.get('admin_jwt_token')}`,
                 },
@@ -211,7 +211,7 @@ const AdminDashboard = () => {
     
     const handleSave = async () => {
         try {
-            const response = await fetch('http://localhost:3003/api/admin/parking-lot', {
+            const response = await fetch('https://admin-backend-2-0pa4.onrender.com/api/admin/parking-lot', {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
@@ -261,7 +261,7 @@ const AdminDashboard = () => {
                 address: ""
             };
             
-            const response = await fetch('http://localhost:3003/api/admin/parking-lot', {
+            const response = await fetch('https://admin-backend-2-0pa4.onrender.com/api/admin/parking-lot', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
