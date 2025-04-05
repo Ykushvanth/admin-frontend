@@ -1,0 +1,127 @@
+.admin-login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    padding: 20px;
+}
+
+.admin-login-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+.admin-login-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.admin-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.admin-login-header h1 {
+    color: #1e3c72;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.admin-login-header p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.admin-login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    color: #444;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.form-group input {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #2a5298;
+    outline: none;
+}
+
+.error-message {
+    background-color: #fff3f3;
+    color: #dc3545;
+    padding: 0.8rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.admin-login-button {
+    background-color: #1e3c72;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+.admin-login-button:hover:not(:disabled) {
+    background-color: #2a5298;
+}
+
+.admin-login-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.admin-login-button i {
+    font-size: 1.1rem;
+}
+
+@media (max-width: 480px) {
+    .admin-login-card {
+        padding: 1.5rem;
+    }
+
+    .admin-login-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .admin-logo {
+        width: 60px;
+        height: 60px;
+    }
+} 
